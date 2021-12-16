@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Nebula</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+	<ul id="joe">
+		<li><a class="active" href="#" onclick="tab()">Tab Cloak</a></li>
+		<li><a href="#news" onclick="edit()">Inspect Element</a></li>
+		<li><a href="#" onclick="history()">History Flood</a></li>
+		<li><a href="https://discord.gg/Nvuf6zDdWy">Support</a></li>
+    <li><a href="notes.html" onclick="return popup(this, 'notes')">NotePad</a></li>
+    
+		<li><a href="games.html">Games</a></li>
+    <li><a href="#" onclick="discordlol()">Discord (Palladium)</a></li>
+
+	</ul>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: purple;
+			background: rgba(0, 0, 0, .5);
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			font-size: 26px;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: purple;
+			opacity: none;
+		}
+	</style>
+
+	<center>
+		<div class="container">
+
+			<h1>Nebula</h1>
+			<h3>Powered by Harmony</h3>
+			<form class="url" method="POST" action="/proxy/session/">
+				<input placeholder="https://www.joe.com" name="url" id="iurl" type="text">
+    <button type="submit" id="btn">Go</button>
+
+</center>
+
+</form>
+</div>
+</div>
+<center><a href="https://chat.anirudhiscool.repl.co/"><button id="disc">Chatbox</button></center></a>
+
+<center><a href="https://discordchat.anirudhiscool.repl.co"><button id="disc">Message to Discord</button></a>
+
+
+
+<script>
+
+function discordlol() {
+  window.location.replace("https://justcool.anirudhiscool.repl.co/service/hvtrs8%2F-dksaopd%2Ccmm-arp/")
+}
+
+function tab() {
+  let newtitle = prompt("Enter a title")
+  document.title = newtitle
+}
+
+
+function edit() {
+  javascript:document.body.contentEditable="true"; document.designMode="on"; void 0
+}
+
+function history() {
+
+
+let url = prompt("Please insert a URL: https://example.com")
+let url2 = prompt("Please insert another URL: https://example.com")
+let url3 = prompt("Please insert one last URL: https://example.com")
+
+let yep = url.value
+let yep2 = url2.value
+let yep3 = url3.value
+
+window.open(url, "_blank");
+window.open(url2,"_blank");
+window.open(url3, "_blank");
+
+}
+
+ function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+    return false; 
+  }
+
+  </script>
+
+
+
+
+</body>
+</html>
