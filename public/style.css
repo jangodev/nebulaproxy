@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Krub:wght@200&family=Questrial&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Manrope:wght@200&family=Open+Sans:wght@800&display=swap');
+
+body {
+  background-color: black;
+	background: linear-gradient(-45deg, #8942a8,#2e0673, cyan, #1c0abf);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+background-repeat: no-repeat;
+ 
+  font-family: 'Open Sans', sans-serif;
+
+  
+ 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.container {
+  font-size: 26px;
+ margin-top: 150px; 
+ 
+}
+
+h1 {
+color: white;
+
+
+}
+
+h3 {
+  color: white;
+}
+
+
+.url {
+
+ margin-left: 40%; 
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+#btn {
+  width: 40px;
+  height: 36px;
+  border: 1px solid 
+#3f1ee6;
+  background: 
+#3f1ee6;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Open Sans;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+#disc {
+  font-size: 20px;
+  margin-top: 10px;
+   
+  background: none;
+  border-radius: 10px;
+  border-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#disc:hover {
+cursor: pointer;
+color: rgb(255, 255, 255);
+border-color: white;
+}
+
+.notes {
+  background-color: yellow;
+}
+
+::placeholder {
+  font-family: Open Sans;
+}
