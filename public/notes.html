@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Notes</title>
+
+<head>
+
+  <script>
+    function load_text() {
+      document.getElementById("output").value = "text....";
+    }
+
+    function bold_click() {
+      document.getElementById("output").style.fontWeight = "bold";
+    }
+
+    function underline_click() {
+      document.getElementById("output").style.textDecoration = "underline";
+    }
+
+    function italic_click() {
+      document.getElementById("output").style.fontStyle = "italic";
+    }
+
+    function normal_click() {
+      document.getElementById("output").style.fontStyle = "normal";
+      document.getElementById("output").style.textDecoration = "none";
+      document.getElementById("output").style.fontWeight = "normal";
+    }
+  </script>
+</head>
+
+<body onload="load_text()">
+
+  <form name="controls" id="controls">
+    <select style="width: 310px">
+<option selected>fonts</option>
+<option>arial black</option>
+</select>
+
+    <input id="button1" type="button" value="B" name="button1" style="font-weight: bold; width: 26px; height: 24px" size="28" onclick="bold_click()">
+
+    <input type="button" value="i" style="width: 25px; font-style: italic; height: 24px" size="30" onclick="italic_click()">
+
+    <input id="button1" style="width: 26px; height: 24px; text-decoration: underline" type="button" size="8" value="u" name="button1" onclick="underline_click()">
+
+    <input id="button1" style="width: 26px; height: 24px;" type="button" size="8" value="n" name="button1" onclick="normal_click()">
+
+    <br/><textarea style="width: 399px; height: 182px" id="output" name="output" rows="9" wrap="virtual" cols=48></textarea><br>
+
+    <p align="center"><input type="reset" value="clear"></p>
+  </form>
+
+</body>
+
+</html>
