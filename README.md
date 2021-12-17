@@ -4,3 +4,9 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 # Hosting
 
 <a href="https://repl.it/github/jangodev/nebulaproxy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+
+# Supports
+- Discord
+- Youtube (Sometimes buggy)
+
+# Will be constantly updated!
