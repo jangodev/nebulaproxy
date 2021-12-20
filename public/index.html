@@ -1,63 +1,108 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link href="games.css" rel="stylesheet">
+	<title>Nebula</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
+
 
 <body>
 
-	<div class="container">
+	<div id="stars"></div>
+	<div id="stars2"></div>
+	<div id="stars3"></div>
 
-		<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cDovL3RldHJsdpcy1nYW1lcy5jb20=/">
-			<div id="game1">
-				<img src="chromedino.jpg">
-   <center><h2>Chrome Dino</h2></center>
-   </div></a>
+<!--<div class="container">
 
+			<h1>Nebula</h1>
+			<h3>Powered by Harmony</h3>
+			<form class="url" method="POST" action="/proxy/session/">
+				<input placeholder="https://www.joe.com" name="url" id="iurl" type="text">
+    <button type="submit" id="btn">Go</button>-->
 
-   <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly93d3cuZ29vZ2xlc25ha2UuY29t/"><div id="game2">
-     <img src="googlesnake.png">
-   <center><h2>Google Snake</h2></center>
-   </div></a>
-  
-
-     <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly93d3cuZ29vZ2xlcGFjbWFuLm5ldA==/"><div id="game3">
-      <img src="pacman.jpg">
-  <center><h2>Pacman</h2></center>
-    </div></a>
-    
-
-      <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cDovL3RldHJpcy1nYW1lcy5jb20=/"><div id="game4">
-      <img src="tetris.png">
-     <center><h2>Tetris</h2></center>
-     </div></a>
-
-         <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/jump-and-run-snes-games-online/play-super-mario-world-2-yoshis-island-online/play/"><div id="game4">
-      <img src="yoshiisland.png">
-     <center><h2>Yoshi's Island</h2></center>
-
-
-     </div></a>
-
-<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/jump-and-run-nes-games-online/super-mario-bros-3/play/"><div id="game1">
-<img src="supermario.jpg">
-     <center><h2>Super Mario Bros 3</h2></center>
-
-</div></a>
-
-<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/platform-game-boy-games-online/wario-land-super-mario-land-3/play/"><div id="game2">
-<img src="warioland.png">
-     <center><h2>Wario Land</h2></center>
-
-</div></a>
-
-
-
-</div>
+<div class="container">
+	<h1> Nebula </h1>
+  <h3> Powered by Harmony </h3>
+	<div class="box">
+		<div class="container1">
      
+			<form class="url" action="/proxy/session/" method="POST" id="unblocker-form">
+				<input type="text" id="url" name="url" autofocus="autofocus" placeholder="What would you like to unblock today?"/>
+      </form>
+    </div>
+    </div>
+  </div>
+<div>
+  <a href="g">
+  <button class="draw">Games</button>
+  </a>
+  <button class="draw" onclick="tab()">Tab cloak</button>
+ <a href="https://chat.anirudhiscool.repl.co/">
+  <button href="#" class="draw">Chatbox</button>
+</a>
+<a href="https://discord.gg/KY4Q6krkbt">
+  <button class="draw">Support</button>
+</a>
+
+
+
+    <script src="script.js"></script>
+    </div>
+  </body>
+  
+<script>
+
+function discordlol() {
+  window.location.replace("https://justcool.thejangoteam.repl.co/service/hvtrs8%2F-dksaopd%2Ccmm-arp/")
+}
+
+function tab() {
+  let newtitle = prompt("Enter a title")
+  document.title = newtitle
+}
+
+
+function edit() {
+  javascript:document.body.contentEditable="true"; document.designMode="on"; void 0
+}
+
+function history() {
+
+
+let url = prompt("Please insert a URL: https://example.com")
+let url2 = prompt("Please insert another URL: https://example.com")
+let url3 = prompt("Please insert one last URL: https://example.com")
+
+let yep = url.value
+let yep2 = url2.value
+let yep3 = url3.value
+
+window.open(url, "_blank");
+window.open(url2,"_blank");
+window.open(url3, "_blank");
+
+}
+
+ function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+    return false; 
+  }
+
+  </script>
+
+
+
 
 </body>
-
 </html>
