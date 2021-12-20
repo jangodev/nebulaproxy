@@ -15,3 +15,6 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 - Discord QR Support
 - Removed History flooder & Notepad
 - Will be adding a new feature that will allow the site to never be blocked.
+
+# Join the Discord Server for support
+https://discord.gg/Nvuf6zDdWy
