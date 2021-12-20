@@ -1,129 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-	<title>Nebula</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+	<link href="games.css" rel="stylesheet">
 </head>
 
 <body>
 
+	<div class="container">
 
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cDovL3RldHJsdpcy1nYW1lcy5jb20=/">
+			<div id="game1">
+				<img src="chromedino.jpg">
+   <center><h2>Chrome Dino</h2></center>
+   </div></a>
 
-	<ul id="joe">
-		<li><a class="active" href="#" onclick="tab()">Tab Cloak</a></li>
-		<li><a href="#news" onclick="edit()">Inspect Element</a></li>
-		<li><a href="#" onclick="history()">History Flood</a></li>
-		<li><a href="https://discord.gg/Nvuf6zDdWy">Support</a></li>
-    <li><a href="notes.html" onclick="return popup(this, 'notes')">NotePad</a></li>
+
+   <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly93d3cuZ29vZ2xlc25ha2UuY29t/"><div id="game2">
+     <img src="googlesnake.png">
+   <center><h2>Google Snake</h2></center>
+   </div></a>
+  
+
+     <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly93d3cuZ29vZ2xlcGFjbWFuLm5ldA==/"><div id="game3">
+      <img src="pacman.jpg">
+  <center><h2>Pacman</h2></center>
+    </div></a>
     
-		<li><a href="games.html">Games</a></li>
-    <li><a href="#" onclick="discordlol()">Discord (Palladium)</a></li>
 
-	</ul>
-	<style>
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: purple;
-			background: rgba(0, 0, 0, .5);
-		}
+      <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cDovL3RldHJpcy1nYW1lcy5jb20=/"><div id="game4">
+      <img src="tetris.png">
+     <center><h2>Tetris</h2></center>
+     </div></a>
 
-		li {
-			float: left;
-		}
+         <a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/jump-and-run-snes-games-online/play-super-mario-world-2-yoshis-island-online/play/"><div id="game4">
+      <img src="yoshiisland.png">
+     <center><h2>Yoshi's Island</h2></center>
 
-		li a {
-			font-size: 26px;
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
 
-		li a:hover {
-			background-color: purple;
-			opacity: none;
-		}
-	</style>
+     </div></a>
 
-	<center>
-		<div class="container">
+<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/jump-and-run-nes-games-online/super-mario-bros-3/play/"><div id="game1">
+<img src="supermario.jpg">
+     <center><h2>Super Mario Bros 3</h2></center>
 
-			<h1>Nebula</h1>
-			<h3>Powered by Harmony</h3>
-			<form class="url" method="POST" action="/proxy/session/">
-				<input placeholder="https://www.joe.com" name="url" id="iurl" type="text">
-    <button type="submit" id="btn">Go</button>
+</div></a>
 
-</center>
+<a href="https://neb.anirudhiscool.repl.co/proxy/aHR0cHM6Ly9wbGF5Y2xhc3NpYy5nYW1lcw==/games/platform-game-boy-games-online/wario-land-super-mario-land-3/play/"><div id="game2">
+<img src="warioland.png">
+     <center><h2>Wario Land</h2></center>
 
-</form>
+</div></a>
+
+
+
 </div>
-</div>
-<center><a href="https://chat.anirudhiscool.repl.co/"><button id="disc">Chatbox</button></center></a>
-
-<center><a href="https://discordchat.anirudhiscool.repl.co"><button id="disc">Message to Discord</button></a>
-
-
-
-<script>
-
-function discordlol() {
-  window.location.replace("https://justcool.thejangoteam.repl.co/service/hvtrs8%2F-dksaopd%2Ccmm-arp/")
-}
-
-function tab() {
-  let newtitle = prompt("Enter a title")
-  document.title = newtitle
-}
-
-
-function edit() {
-  javascript:document.body.contentEditable="true"; document.designMode="on"; void 0
-}
-
-function history() {
-
-
-let url = prompt("Please insert a URL: https://example.com")
-let url2 = prompt("Please insert another URL: https://example.com")
-let url3 = prompt("Please insert one last URL: https://example.com")
-
-let yep = url.value
-let yep2 = url2.value
-let yep3 = url3.value
-
-window.open(url, "_blank");
-window.open(url2,"_blank");
-window.open(url3, "_blank");
-
-}
-
- function popup(mylink, windowname) { 
-    if (! window.focus)return true;
-    var href;
-    if (typeof(mylink) == 'string') href=mylink;
-    else href=mylink.href; 
-    window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
-    return false; 
-  }
-
-  </script>
-
-
-
+     
 
 </body>
+
 </html>
