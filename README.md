@@ -10,4 +10,8 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 - Discord
 - Youtube (Sometimes buggy)
 
-# Will be constantly updated!
+# Updates:
+- New UI Update!
+- Discord QR Support
+- Removed History flooder & Notepad
+- Will be adding a new feature that will allow the site to never be blocked.
