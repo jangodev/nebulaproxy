@@ -1,0 +1,304 @@
+
+<html>
+  <head>
+      <meta name="propeller" content="8f6b5c2e7e2402f288fb488a30709ce4">
+      <title>Games</title>
+      <link rel="icon" href="./assets/logo.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+      <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+       background-color: #333;
+      }	
+
+    li {
+        float: left;
+      }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+              font-family: 'Open Sans', sans-serif;
+      }
+
+    li a:hover {
+        background-color: #111;
+      }
+          h1 {
+              font-size: 100px;
+              font-family: 'Acme', sans-serif;
+              color:white
+          }
+          h3{
+          font-family: 'Helvetica', sans-serif;  	
+          font-size: 24px;
+          font-weight: 10;
+        }
+            body {
+      background-color: #121212;
+            }
+          p{
+            padding: 0px 16px;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            letter-spacing: 2px;
+        }
+          
+          .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+       text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 48px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+          
+          
+          .button1 {
+            background-color: #f75dfc;
+            border-radius: 8px;
+              
+        }
+          
+          .buttons {
+              margin-bottom:50px;
+          }
+          
+          input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('https://img.icons8.com/material-outlined/24/000000/search--v1.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 25%;
+    }
+          
+          
+          .selectedButton {
+        border: none;
+        color: white;
+        padding: 8px 15px;
+       text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+              background-color: #f75dfc;
+            border-radius: 8px;
+    }
+          
+          .selectButton {
+        border: none;
+        color: white;
+        padding: 8px 15px;
+       text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+              background-color: #fbc0fc;
+            border-radius: 8px;
+    }
+      </style>
+  </head>
+  <body>
+      <div align='center' id='wrapper' class="buttons">
+          <h1>
+            Games
+          </h1>
+          <div style="margin-top: -60px">
+              <button name="all" onclick="switchGame('all');" class="selectedbutton selectable">All Games</button>
+              <button name="new" onclick="switchGame('new');" class="selectbutton selectable">New Games</button>
+          </div>
+          <div class="search-bar" style="margin-top: 25px">
+          <input type="text" name="search" value="" autocomplete="on" id="myinput" onkeyup="searchFunction()" placeholder="Search">
+        <br><br><br>
+          </div>
+          
+          <div name="2048" class="gameDiv all">
+              <button onclick="window.open('./g/2048/Lala.html', '_self');" class="button button1">2048</button>
+              <br><br>
+          </div>
+          <div name="A Dark Room" class="gameDiv all">
+              <button onclick="window.open('./g/ADarkRoom/index.html', '_self');" class="button button1">A Dark Room</button>
+              <br><br>
+          </div>
+          <div name="Chain Reaction" class="gameDiv all">
+              <button onclick="window.open('./g/ChainReaction/game.html', '_self');" class="button button1">Chain Reaction</button>
+              <br><br>
+          </div>
+          <div name="Cookie Clicker" class="gameDiv all">
+              <button onclick="window.open('./g/CookieClicker/Lala.html', '_self');" class="button button1">Cookie Clicker</button>
+              <br><br>
+          </div>
+    <div name="Dinosaur Game" class="gameDiv all">
+              <button onclick="window.open('./g/DinosaurGame/index.html', '_self');" class="button button1">Chrome Dino Game</button>
+              <br><br>
+          </div>
+    <div name="Doge Miner" class="gameDiv all">
+              <button onclick="window.open('./g/DogeMiner/index.html', '_self');" class="button button1">Doge Miner</button>
+              <br><br>
+          </div>
+    <div name="Doodle Jump" class="gameDiv all">
+              <button onclick="window.open('./g/DoodleJump/index.html', '_self');" class="button button1">Doodle Jump</button>
+              <br><br> 
+          </div>   
+          <div name="Duck Life 4" class="gameDiv all new">
+      <button onclick="window.open('./g/DuckLife4/index.html', '_self');" class="button button1">Duck Life 4<h2 style="margin-left: 50px; position: absolute; display: inline-block; color:yellow; font-size: 24px;">
+              (NEW)               
+              <br><br>
+          </div>            
+          <div name="Geometry Dash" class="gameDiv all new">
+      <button onclick="window.open('./g/GeoDash/index.html', '_self');" class="button button1">Geometry Dash<h2 style="margin-left: 50px; position: absolute; display: inline-block; color:yellow; font-size: 24px;">
+              (NEW)               
+              <br><br>
+          </div>
+    <div name="Hextris" class="gameDiv all">
+              <button onclick="window.open('./g/Hextris/Banana.html', '_self');" class="button button1">Hextris</button>
+              <br><br>
+          </div>
+    <div name="Idle Breakout" class="gameDiv all">
+              <button onclick="window.open('./g/IdleBreakout/index.html', '_self');" class="button button1">Idle Breakout</button>
+              <br><br>
+          </div>
+    <div name="Idle Sharks" class="gameDiv all">
+              <button onclick="window.open('./g/IdleShark/index.html', '_self');" class="button button1">Idle Sharks</button>
+              <br><br>
+          </div>
+    <div name="Missiles" class="gameDiv all">
+              <button onclick="window.open('./g/Missiles/index.html', '_self');" class="button button1">Missiles</button>
+              <br><br>
+          </div>
+    <div name="Particle Clicker" class="gameDiv all">
+              <button onclick="window.open('./g/ParticleClicker/index.html', '_self');" class="button button1">Particle Clicker</button>
+              <br><br>
+          </div>
+    <div name="Retro Bowl" class="gameDiv all">
+              <button onclick="window.open('./g/RetroBowl/index.html', '_self');" class="button button1">Retro Bowl</button>
+              <br><br>
+          </div>            
+          <div name="Rolling Vertex" class="gameDiv all new">
+      <button onclick="window.open('./g/RollingVert/index.html', '_self');" class="button button1">Rolling Vertex<h2 style="margin-left: 50px; position: absolute; display: inline-block; color:yellow; font-size: 24px;">
+              (NEW)               
+              <br><br>
+          </div>
+    <div name="Slope" class="gameDiv all">
+              <button onclick="window.open('./g/Slope/index.html', '_self');" class="button button1">Slope</button>
+              <br><br>
+          </div>
+    <div name="Tower Master" class="gameDiv all">
+              <button onclick="window.open('./g/TowerMaster/index.html', '_self');" class="button button1">Tower Master</button>
+              <br><br>
+          </div>
+    <div name="Vex 5 " class="gameDiv all">
+              <button onclick="window.open('./g/Vex5/index.html', '_self');" class="button button1">Vex 5</button>
+              <br><br>
+          </div>
+    <div name="Vex 4" class="gameDiv all">
+              <button onclick="window.open('./g/Vex4/index.html', '_self');" class="button button1">Vex 4</button>
+              <br><br>
+          </div>
+      </div> 
+
+  </body>
+  
+  <script>
+      var selectedTopic = "all"
+      
+    window.addEventListener('keydown', function (e) {
+          if(e.key == "`")
+          {
+      window.open('https://classroom.google.com/u/0/h', '_blank');
+          }
+  }, false);
+      
+      
+      
+      function searchFunction() {
+          console.log("run")
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('myinput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById('wrapper');
+      li = document.getElementsByClassName('gameDiv');
+          var buttons = document.getElementsByClassName('selectable');
+    console.log(li)
+      for(i=0 ; i< li.length; i++){
+          a = li[i].getAttribute("name");
+              console.log(a)
+          if(a.toUpperCase().indexOf(filter) > -1){
+                  if(li[i].classList.contains(selectedTopic))
+                {
+                    li[i].style.display = "";
+                }
+                else
+                {
+                    li[i].style.display = 'none';
+                }
+          }
+
+          else{
+              li[i].style.display = 'none';
+          }
+      }
+  }
+      
+      function switchGame(x)
+      {
+          selectedTopic = x
+          var buttons = document.getElementsByClassName('selectable');
+          var games = document.getElementsByClassName('gameDiv');
+          for(i=0 ; i< buttons.length; i++){
+          a = buttons[i].getAttribute("name");
+              if(selectedTopic==a)
+              {
+                  buttons[i].classList.add('selectedbutton');
+                  buttons[i].classList.remove('selectbutton');
+              }
+              else
+              {
+                  buttons[i].classList.remove('selectedbutton');
+                  buttons[i].classList.add('selectbutton');
+              }
+              
+      }
+          for(i=0 ; i< games.length; i++){
+          if(games[i].classList.contains(selectedTopic))
+              {
+                  games[i].style.display = "";
+              }
+              else
+              {
+                  games[i].style.display = 'none';
+              }
+      }
+          
+          
+      }
+
+  </script>
+
+</html>
