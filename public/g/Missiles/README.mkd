@@ -1,0 +1,18 @@
+[Missile Game](http://missile-game.bwhmather.com)
+====================================
+
+Full rewrite of the original flash game by Damien Clarke (which you can
+find at [http://albinoblacksheep.com/games/missilegame3d](http://albinoblacksheep.com/games/missilegame3d)) using SVG and
+javascript.  The aim is to fly a missile past a sequence of rotating barriers and avoid
+crashing for as long as possible while everything speeds up.
+
+Mostly written over christmas in 2010 when I was learning javascript.  I felt SVG was being
+unfairly neglected with all the hype surrounding canvas, WebGL and 3d CSS.
+
+Makes use of Kevin Lindsey's SVG geometry library, modified slightly to support
+elliptical arcs, for finding collisions.  My original plan was to use the
+browser `checkIntersection()` built-in but it didn't work properly in any
+browsers.  Currently I would prefer to go the other way and avoid using any of
+the rendering state in game logic.
+
+With the exception of the lib folder, this software is distributed under the terms of the GNU Affero Public License.  See LICENSE for details.
