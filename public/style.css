@@ -9,7 +9,7 @@ input:focus,
     button:focus {
       outline: none;
 	transition: all .2s ease-in-out;
-    transform: scale(1.1);
+   
     }
 
 
@@ -129,11 +129,13 @@ h1 {
   height: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 60px;
   text-transform: uppercase;
   text-align: center;
   font-family: Helvetica;
   font-size: 150px;
   color: rgba(0, 0, 0, 0.603);
+  
 }
 h3 {
   width: 100%;
