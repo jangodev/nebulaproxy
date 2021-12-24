@@ -1,0 +1,3 @@
+// Open Optimized* Optimized by https://jscompress.com/ 
+$(".menu").click(function(){$(this).toggleClass("icon-menu"),$(this).toggleClass("icon-cross"),$("nav").toggleClass("down"),$("nav li a").removeClass("down"),$(".search").removeClass("down"),$(".icon-search").removeClass("icon-cross")}),$("nav li a").click(function(){$(".menu").addClass("icon-menu"),$(".menu").removeClass("icon-cross"),$("nav").toggleClass("down")}),$(".icon-search").click(function(){$(this).toggleClass("icon-cross"),$(".menu").addClass("icon-menu"),$(".menu").removeClass("icon-cross"),$(".search").toggleClass("down"),$("nav").removeClass("down")});
+// Close optimized 
