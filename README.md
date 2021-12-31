@@ -1,5 +1,10 @@
 # Nebula Proxy
-Open Source proxy that bypasses web filters, supports many sites. In short, it's an enhanced alloy proxy to make it run much faster and smoother, with extra support for sites + exploits. I call this edited verison of Alloy, "Harmony." I believe Alloy had potential and Nebula is here to prove that. 
+Open Source proxy that bypasses web filters, supports many sites. In short, it's an enhanced alloy proxy to make it run much faster and smoother, with extra support for sites + exploits. I call this edited verison of Alloy, "Harmony." I believe Alloy had potential and Nebula is here to prove that.
+
+# IMPORTANT NOTE
+THE NEBULA PROXY FRONTEND IS COPYRIGHT BY JANGO AND GREENWORLD (DEVS). YOU ARE NOT ALLOWED TO TAKE THEM AND USE IT AS A "TEMPLATE."
+ONLY HARONY, THE BACKEND, IS ALLOWED TO BE USED FREELY.
+CONSEQUENCES WILL OCCUR IF YOU ARE FOUND STEALING THE FRONTEND.
 
 # Deploying
 
