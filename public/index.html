@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Nebula</title>
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="unload.css" rel="stylesheet" type="text/css" />
-	<link href="switchmore.css" rel="stylesheet" type="text/css" />
+  <!-- Seperate CSS files --> 
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/unload.css" rel="stylesheet" type="text/css" />
+	<link href="css/switchmore.css" rel="stylesheet" type="text/css" />
+  	<link href="css/font.css" rel="stylesheet" type="text/css" />
 	<link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45816/feather-cp.css" rel="stylesheet" type="text/css" />
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +30,7 @@
 
 
 <body>
-
+<div id="theme-container">
 	<!--<div class="container">
 
 			<h1>Nebula</h1>
@@ -44,18 +46,18 @@
 		<ul>
      <li> <a></a></li>
       <li> <a></a></li>
-			<li><a onclick="tab()" href="#">Tab Cloak</a></li>
-			<li><a href="#">Settings</a></li>
-			<li><a href="https://discord.gg/KY4Q6krkbt">Support</a></li>
-			<li><a href="https://chat.anirudhiscool.repl.co">Chatbox</a></li>
-			<li><a href="g">Games</a></li>
+			<li><a onclick="tab()" class="font-nebu" href="#">Tab Cloak</a></li>
+			<li><a class="font-nebu" href="settings">Settings</a></li>
+			<li><a class="font-nebu" href="https://discord.gg/KY4Q6krkbt">Support</a></li>
+			<li><a class="font-nebu" href="#" id="myBtn">Chatbox</a></li>
+			<li><a class="font-nebu" href="gcat">Games</a></li>
 		</ul>
 	</nav>
 	<div class="search">
-		<h1></h1><input type="search" />
+		<h1></h1><input type="search"/>
 </div>
 <div class="container">
-	<h1> Nebula </h1>
+	<h1 id="heads"> Nebula </h1>
   <!-- <h3> Powered by Harmony </h3> -->
   
 	<div id="stars"></div>
@@ -66,7 +68,7 @@
 		<div class="container1">
      
 			<form class="url" action="/proxy/session/" method="POST" id="unblocker-form">
-				<input type="text" id="url" name="url" autofocus="autofocus" placeholder="What would you like to unblock today?"/>
+				<input type="text" id="url" name="url" autofocus="autofocus" autocomplete="off" placeholder="What would you like to unblock today?"/>
       </form>
     </div>
     </div>
@@ -77,75 +79,48 @@
   <div class="ProxySwitch">
 
       <input type="radio" class="switch-input" name="view" value="1" id="1" checked>
-    <label for="1" class="switch-label switch-label-off">Week</label>
+    <label id="heads-2" for="1" class="switch-label switch-label-off">Harmony</label>
     <input type="radio" class="switch-input" name="view" value="2" id="2">
-    <label for="2" class="switch-label switch-label-on">Month</label>
-    <span class="switch-selection"></span>
+    <label id="heads-1"for="2" class="switch-label switch-label-on">Corrosion</label>
+   
       <input type="radio" class="switch-input" name="view" value="3" id="3" checked>
-    <label for="3" class="switch-label switch-label-harm">Week</label>
+    <label  id="heads-3" for="3" class="switch-label switch-label-harm">Palladium</label>
   </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3>Nebula Chatbox</h2>
+    </div>
+    <div class="modal-body">
+<a id="repl"href="https://chat.anirudhiscool.repl.co">repl.co domain</a>
+<a href="#" id="glitch">glitch.me domain</a>
+
+</center>
+    </div>
+    <div class="modal-footer">
+      <h3>Which domain would you like to go to?</h3>
+    </div>
+  </div>
+
+</div>
 
 
     <script src="script.js"></script>
 </div>
-
+</div>
+<footer> 
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<span id="checker"> You're using a theme. </span>
+</footer>
   </body>
   
 <script>
-
-  var xor = (str,key)=>(str.split('').map((char,ind)=>ind%key?String.fromCharCode(char.charCodeAt()^key):char).join(''));
-
-
-$('#corrosion').click(() => {
-       
-        if (!$('#url').val().startsWith('http')) {
-           location.protocol+'//'+window.location.host+'/service/gateway?url='+'https://google.com/search?q='+$('#url').val(); 
-        }
-         location.protocol+'//'+window.location.host+'/service/gateway?url='+$('#url').val()
-        
-      })
-
-
-
-function discordlol() {
-  window.location.replace("https://justcool.thejangoteam.repl.co/service/hvtrs8%2F-dksaopd%2Ccmm-arp/")
-}
-
-function tab() {
-  let newtitle = prompt("Enter a title")
-  document.title = newtitle
-}
-
-
-function edit() {
-  javascript:document.body.contentEditable="true"; document.designMode="on"; void 0
-}
-
-function history() {
-
-
-let url = prompt("Please insert a URL: https://example.com")
-let url2 = prompt("Please insert another URL: https://example.com")
-let url3 = prompt("Please insert one last URL: https://example.com")
-
-let yep = url.value
-let yep2 = url2.value
-let yep3 = url3.value
-
-window.open(url, "_blank");
-window.open(url2,"_blank");
-window.open(url3, "_blank");
-
-}
-
- function popup(mylink, windowname) { 
-    if (! window.focus)return true;
-    var href;
-    if (typeof(mylink) == 'string') href=mylink;
-    else href=mylink.href; 
-    window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
-    return false; 
-  }
 
   </script>
 <script src="dil.js"></script>
