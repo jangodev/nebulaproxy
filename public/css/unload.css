@@ -1,0 +1,98 @@
+* {
+    transition: all .2s ease-in-out;
+    font-family: Arial
+}
+
+body,html {
+    height: 100%;
+    width: 100%
+}
+
+body,html,li,ul {
+    padding: 0;
+    margin: 0 auto
+}
+
+[class*=icon] {
+    display: inline-block;
+    margin: 10px 16px 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    cursor: pointer
+}
+
+[class*=icon]:hover {
+    color: #242424
+}
+
+.navbar {
+    background: 0 0;
+    width: 100%;
+    height: 75px;
+    z-index: 99999;
+    box-shadow: 0 0 10px transparent
+}
+
+.menu,.navbar,.settings {
+    position: absolute;
+}
+
+.menu {
+    left: 0
+}
+
+.settings {
+    right: 0
+}
+
+.search,nav {
+    position: absolute;
+    background: #00000079;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    z-index: 999;
+    transition-timing: 1s;
+    box-shadow: 0 0 10px #00000079
+}
+
+nav li {
+    list-style: none;
+    text-align: center
+}
+
+nav li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24pt
+}
+
+nav li a:hover {
+    background: #00000079;
+    text-decoration: underline
+}
+
+.search {
+    padding: 15px;
+    line-height: 75px
+}
+
+.search h1 {
+    float: left;
+    margin: 0;
+    color: #fff;
+    padding-right: 25px;
+    font-weight: 400
+}
+
+.search input[type=search] {
+    padding: 10px;
+    width: 250px
+}
+
+.down {
+    top: 74px
+}
