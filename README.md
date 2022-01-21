@@ -7,14 +7,12 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 
 # Supports
 - Any static site
-- Discord
+- Discord (QR)
 - Youtube (Sometimes buggy)
 
 # Updates:
-- New UI Update!
-- Discord QR Support
-- Removed History flooder & Notepad
-- Will be adding a new feature that will allow the site to never be blocked.
+- Added pass origin to fix discord QR support
+- Hcaptcha support coming soon
 
 # Join the Discord Server for support
 https://discord.gg/Nvuf6zDdWy
