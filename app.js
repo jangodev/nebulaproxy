@@ -15,10 +15,6 @@ if (!config.prefix.startsWith('/')) {
 }
 
 
-
-
-
-
 if (!config.prefix.endsWith('/')) {
   config.prefix = `${config.prefix}/`;
 }
