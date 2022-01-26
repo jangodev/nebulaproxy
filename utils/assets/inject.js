@@ -81,7 +81,7 @@ let setattribute_rewrite = window.Element.prototype.setAttribute; window.Element
         
         if (location.protocol == 'https:') { protocol = 'wss://' } else { protocol = 'ws://' }
         
-        args_array[0] = protocol + location.origin.split('/').splice(2).join('/') + prefix + 'ws/' + btoa(args_array[0]);
+        args_array[0] = protocol + location.origin.split('/').splice(2).join('/') + prefix + 'ws/' + btoa(args_array[0])+'?origin='+new URL(url).origin
         
         return new target(args_array);
       }
