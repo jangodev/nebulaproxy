@@ -17,7 +17,7 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 # Join the Discord Server for support
 https://discord.gg/Nvuf6zDdWy
 
-# Usage And Copyright
+# Usage And Copyright notice. 
 The Nebula front-end is hereby copywritten by Jango and GreenWorld, and proprietary lead developers of Nebula. 
 You're not permitted to use the front-end for any company or personal beneficiary purposes. 
 CONSEQUENCES WILL OCCUR IF YOU ARE FOUND STEALING THE FRONTEND.
