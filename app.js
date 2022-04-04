@@ -183,6 +183,11 @@ app.use(config.prefix, async (req, res, next) => {
 
   };
 
+  if (proxy.url.hostname == 'www.discord.com') {
+    return res.redirect(307, config.prefix + rewrite_url('https://discord.com/login'));
+
+  };
+
   if (proxy.url.hostname == 'www.womginx.arph.org') { 
     return res.redirect
    
