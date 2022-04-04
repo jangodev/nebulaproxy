@@ -8,8 +8,8 @@ margin:0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
- 
+    overflow-x: hidden; 
+   overflow-y: hidden; 
 }
 
 
@@ -52,7 +52,15 @@ h1 {
  
  
 }
-
+h4 {
+  font-family: "Roboto";
+  text-align: right;
+  animation-name: colorthing;
+  animation-duration: 3s;
+  color: #e9f5db;
+ 
+ 
+}
 .header_section_top {
   position: fixed;
     animation-name: fadein;
@@ -189,7 +197,7 @@ font-family: "Roboto";
  width: 100%;
 /* Height of the footer*/ 
 height: 10px;
-padding-bottom: 100px; 
+padding-bottom: 70px; 
 text-align: center;
 background-color: black;
 }
@@ -238,3 +246,7 @@ background-color: black;
     opacity: 100%;
   }
 }
+
+  input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
