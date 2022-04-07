@@ -11,8 +11,7 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 - Youtube (Sometimes buggy)
 
 # Updates:
-- Added pass origin to fix discord QR support
-- Hcaptcha support coming soon
+- changelog coming soon
 
 # Join the Discord Server for support
 https://discord.gg/Nvuf6zDdWy
